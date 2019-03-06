@@ -77,10 +77,12 @@ sudo apt install snapd
 sudo snap install nextcloud
 ```
 
-4) Instalando o Hidden Services do Tor
+5) Instalando o Hidden Services do Tor
 
 Siga: https://mroystonward.github.io/self-hosting-with-raspberry-pi-and-tor/#installing-tor
 
 Na configuração do Hidden Service, use `HiddenServicePort 80 127.0.0.1:80` (porta 80 e não 7658, como no tutorial do link)
 
-4) 
+Reinicie o Tor (`sudo service restart tor`) e verifique seu endereço .onion, com o qual acessará seu Nextcloud, com `sudo cat /var/lib/tor/hidden_service/hostname`.
+
+6) 

@@ -5,8 +5,8 @@ Esse tutorial explica o caminho para criação de um repositório de documentos 
 
 ## Materiais utilizados:
 
-- Raspberry Pi 3 B+
-- HD Externo de 1 TB
+- Raspberry Pi 3 B+ (outros Raspberries devem funcionar)
+- HD Externo (500 MB ou maior recomendado)
 
 ## Passos a serem realizados:
 
@@ -35,7 +35,9 @@ sudo fdisk /dev/sda
 # Press 'w'
 ```
 Format partition as ext4.
-`sudo mkfs.ext4 /dev/sda1`
+```
+sudo mkfs.ext4 /dev/sda1
+```
 
 Create folder for mount.
 `sudo mkdir /mnt/hd`
@@ -53,8 +55,12 @@ Check to see if drive is mounted.
 `df -h`
 /dev/sda1 should appear as mounted on /mnt/hd
 
-3) Instalando o Hidden Services do Tor
+3) Instale o Snapd
+
+`sudo apt install snapd`
+
+4) Instalando o Hidden Services do Tor
 
 Siga: https://mroystonward.github.io/self-hosting-with-raspberry-pi-and-tor/#installing-tor
 
-Deixe 
+4) 

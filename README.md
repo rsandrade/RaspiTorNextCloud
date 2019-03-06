@@ -61,9 +61,9 @@ sudo mount -a
 
 Check to see if drive is mounted.
 ```
-df -h`
-/dev/sda1 should appear as mounted on /mnt/hd
+df -h
 ```
+/dev/sda1 should appear as mounted on /mnt/hd
 
 3) Instale o Snapd
 
@@ -71,8 +71,16 @@ df -h`
 sudo apt install snapd
 ```
 
+4) Instale o Nextcloud via Snapd
+
+```
+sudo snap install nextcloud
+```
+
 4) Instalando o Hidden Services do Tor
 
 Siga: https://mroystonward.github.io/self-hosting-with-raspberry-pi-and-tor/#installing-tor
+
+Na configuração do Hidden Service, use `HiddenServicePort 80 127.0.0.1:80` (porta 80 e não 7658, como no tutorial do link)
 
 4) 

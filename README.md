@@ -96,3 +96,11 @@ Acesse as configurações do Nextcloud com `sudo nano /var/snap/nextcloud/curren
     1 => 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.onion',
   ),
 ```
+
+7) Acesse seu Nextcloud via Tor pela primeira vez
+
+Teste o acesso usando o endereço .onion do passo "5" via navegador Tor. O primeiro acesso define qualquer login e senha inseridos como sendo os dados do administrador.
+
+8) Habilite a criptografia do lado do servidor
+
+Siga https://docs.nextcloud.com/server/15/admin_manual/configuration_files/encryption_configuration.html#before-enabling-encryption

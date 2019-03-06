@@ -40,24 +40,36 @@ sudo mkfs.ext4 /dev/sda1
 ```
 
 Create folder for mount.
-`sudo mkdir /mnt/hd`
+```
+sudo mkdir /mnt/hd
+```
 
 Look up UUID of flash drive.
-`UUID="$(sudo blkid -s UUID -o value /dev/sda1)"`
+```
+UUID="$(sudo blkid -s UUID -o value /dev/sda1)"
+```
 
 Add mount to fstab.
-`echo "UUID=$UUID /mnt/hd ext4 defaults,nofail 0" | sudo tee -a /etc/fstab`
+```
+echo "UUID=$UUID /mnt/hd ext4 defaults,nofail 0" | sudo tee -a /etc/fstab
+```
 
 Test fstab file.
-`sudo mount -a`
+```
+sudo mount -a
+```
 
 Check to see if drive is mounted.
-`df -h`
+```
+df -h`
 /dev/sda1 should appear as mounted on /mnt/hd
+```
 
 3) Instale o Snapd
 
-`sudo apt install snapd`
+```
+sudo apt install snapd
+```
 
 4) Instalando o Hidden Services do Tor
 

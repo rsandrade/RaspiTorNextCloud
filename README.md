@@ -96,6 +96,7 @@ Acesse as configurações do Nextcloud com `sudo nano /var/snap/nextcloud/curren
     1 => 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.onion',
   ),
 ```
+Reinicie com `sudo snap restart nextcloud`.
 
 7) Acesse seu Nextcloud via Tor pela primeira vez
 

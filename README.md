@@ -23,8 +23,8 @@ sudo fdisk /dev/sda
 # Press 'd'
 # Press 'w'
 ```
-Create new primary partition.
 
+Crie uma partição primária.
 ```
 sudo fdisk /dev/sda
 # Press 'n'
@@ -34,41 +34,42 @@ sudo fdisk /dev/sda
 # Press 'enter'
 # Press 'w'
 ```
-Format partition as ext4.
+
+Formate a partição com o sistema de arquivos ext4.
 ```
 sudo mkfs.ext4 /dev/sda1
 ```
 
-Create folder for mount.
+Crie uma pasta para montar.
 ```
 sudo mkdir /mnt/hd
 ```
 
-Look up UUID of flash drive.
+Localize o UUID do HD externo.
 ```
 UUID="$(sudo blkid -s UUID -o value /dev/sda1)"
 ```
 
-Add mount to fstab.
+Adicione a partição para montagem no fstab.
 ```
 echo "UUID=$UUID /mnt/hd ext4 defaults,nofail 0" | sudo tee -a /etc/fstab
 ```
 
-Test fstab file.
+Teste o fstab.
 ```
 sudo mount -a
 ```
 
-Check to see if drive is mounted.
+Verifique se o HD foi montado.
 ```
 df -h
 ```
-/dev/sda1 should appear as mounted on /mnt/hd
+/dev/sda1 deverá aparecer montado em /mnt/hd
 
-3) Instale o Snapd
+3) Instale o Snapd e o Tor
 
 ```
-sudo apt install snapd
+sudo apt install snapd tor
 ```
 
 4) Instale o Nextcloud via Snapd

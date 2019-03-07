@@ -1,4 +1,4 @@
-![Raspi + Tor + NextCloud](RaspTorNextcloudImg.jpg)
+![Raspi + Tor + NextCloud](RaspTorNextcloud.png)
 
 # Raspiberry + Tor + NextCloud
 Instalação de NextCloud com dados criptografados e acessíveis via Tor

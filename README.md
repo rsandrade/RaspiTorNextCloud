@@ -103,7 +103,9 @@ Reinicie com `sudo snap restart nextcloud`.
 
 Teste o acesso usando o endereço .onion do passo "5" via navegador Tor. O primeiro acesso define qualquer login e senha inseridos como sendo os dados do administrador.
 
-8) Habilite a criptografia do lado do servidor
+8) Habilite a criptografia no lado do servidor
+
+Todos os documentos armazenados serão criptografados para evitar acessos diretos ao conteúdo armazenados no HD (ou seja, se houver acesso físico e tentativa de acesso aos documentos).
 
 Siga https://docs.nextcloud.com/server/15/admin_manual/configuration_files/encryption_configuration.html#before-enabling-encryption
 

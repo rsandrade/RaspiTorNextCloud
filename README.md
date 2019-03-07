@@ -1,9 +1,8 @@
 ![Raspi + Tor + NextCloud](RaspTorNextcloud.png)
 
 # Raspiberry + Tor + NextCloud
-Instalação de NextCloud com dados criptografados e acessíveis via Tor
 
-Esse tutorial explica o caminho para criação de um repositório de documentos acessível pela rede Tor.
+Tutorial para criação de repositório de documentos (textos, imagens, videos etc) seguro, utilizando Nextcloud com criptografia no lado do servidor e acessível pela rede Tor.
 
 ## Materiais utilizados:
 

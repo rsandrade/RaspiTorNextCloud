@@ -2,7 +2,7 @@
 
 # Raspiberry + Tor + NextCloud
 
-Tutorial para criação de repositório de documentos (textos, imagens, videos etc) seguro, utilizando Nextcloud com criptografia no lado do servidor e acessível pela rede Tor.
+Tutorial para criação de repositório de documentos (textos, imagens, videos etc) seguro, utilizando Nextcloud com criptografia no lado do servidor e acessível pela rede Tor com um endereço .onion.
 
 ## Materiais utilizados:
 

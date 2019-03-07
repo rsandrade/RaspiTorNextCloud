@@ -116,3 +116,5 @@ https://help.nextcloud.com/t/running-nextcloud-as-a-hidden-service-tor/25488/10
 https://mroystonward.github.io/self-hosting-with-raspberry-pi-and-tor/#setting-up-a-hidden-service
 
 https://docs.nextcloud.com/server/15/admin_manual/configuration_files/encryption_configuration.html#before-enabling-encryption
+
+https://docs.nextcloud.com/server/15/admin_manual/installation/installation_wizard.html#trusted-domains
